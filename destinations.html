@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <head>
+        <title>Destinations - India Insights</title> 
+        <link rel="stylesheet" href="css/styles.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    </head>
+    
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">India Insights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Tour Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-dark text-center py-5" style="background-image: url('assets/images/hero-destinations.jpg'); background-size: cover;">
+        <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
+            <h1>Explore India's Stunning Destinations</h1>
+            <p>Find your next adventure in the heart of India</p>
+        </div>
+    </header>
+    
+    <section class="search-bar py-3">
+        <div class="container">
+            <form class="d-flex justify-content-center">
+                <input class="form-control me-2" type="search" id="searchInput" placeholder="Search for a destination" aria-label="Search">
+                <button class="btn btn-primary" id="searchButton" type="submit">Search</button>
+            </form>
+            
+            
+        </div>
+    </section>
+    
+    <section class="destinations py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Top Destinations</h2>
+            <div class="row">
+                <!-- Destination Card 1 -->
+                <div class="col-md-4">
+                    <div class="card"  data-name="Taj Mahal">
+                        <img src="assets/images/taj-mahal.jpg" class="card-img-top" alt="Taj Mahal">
+                        <div class="card-body">
+                            <h5 class="card-title">Taj Mahal, Agra</h5>
+                            <p class="card-text">A symbol of love and one of the Seven Wonders of the World.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 2 -->
+                <div class="col-md-4">
+                    <div class="card"  data-name="kerala">
+                        <img src="assets/images/kerala-tour.jpg" class="card-img-top" alt="Kerala">
+                        <div class="card-body">
+                            <h5 class="card-title">Kerala Backwaters</h5>
+                            <p class="card-text">Relax in the serene backwaters of Kerala and enjoy houseboat cruises.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 3 -->
+                <div class="col-md-4">
+                    <div class="card"  data-name="Jaipur">
+                        <img src="assets/images/jaipur.jpg" class="card-img-top" alt="Jaipur">
+                        <div class="card-body">
+                            <h5 class="card-title">Jaipur, the Pink City</h5>
+                            <p class="card-text">Discover Jaipur’s royal palaces and vibrant culture.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Destination Card 4 -->
+                 <div class="col-md-4">
+                    <div class="card"  data-name="Darjeeling">
+                        <img src="assets/images/darjeeling.jpg" class="card-img-top" alt="Darjeeling, West Bengal">
+                        <div class="card-body">
+                            <h5 class="card-title">Darjeeling</h5>
+                            <p class="card-text">Famous for panoramic views of the Himalayas, and cool climate.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Destination Card 5 -->
+                 <div class="col-md-4">
+                    <div class="card"  data-name="Shimla">
+                        <img src="assets/images/Shimla.jpg" class="card-img-top" alt="Shimla, Himachal Pradesh">
+                        <div class="card-body">
+                            <h5 class="card-title">shimla</h5>
+                            <p class="card-text">Chill in the Queen of Hills, Where Snow Meets Serenity.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Destination Card 6 -->
+                 <div class="col-md-4">
+                    <div class="card"  data-name="Goa">
+                        <img src="assets/images/goa-tour.jpg" class="card-img-top" alt="goa">
+                        <div class="card-body">
+                            <h5 class="card-title">Goa</h5>
+                            <p class="card-text">Relax and Experience the Vibrant Beaches, Rich Heritage.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 7 -->
+                <div class="col-md-4">
+                    <div class="card"  data-name="Ladakh">
+                        <img src="assets/images/ladakh.jpg" class="card-img-top" alt="ladakh">
+                        <div class="card-body">
+                            <h5 class="card-title">Ladakh</h5>
+                            <p class="card-text">Explore the Majestic Mountains, Serene Monasteries.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                 <!-- Destination Card 8 -->
+                 <div class="col-md-4">
+                    <div class="card"  data-name="Rishikesh">
+                        <img src="assets/images/Rishikesh.jpg" class="card-img-top" alt="meenakshi temple, madurai">
+                        <div class="card-body">
+                            <h5 class="card-title">Rishikesh</h5>
+                            <p class="card-text">Find Your Zen by the Ganges; Adventure Meets Peace.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+                <!-- Destination Card 9 -->
+                <div class="col-md-4">
+                    <div class="card"  data-name="Andaman">
+                        <img src="assets/images/Andaman.jpg" class="card-img-top" alt="Andaman and Nicobar Islands">
+                        <div class="card-body">
+                            <h5 class="card-title">Andaman and Nicobar Islands</h5>
+                            <p class="card-text">Dive into Paradise; Nature’s Blue Haven Awaits.</p>
+                            <a href="packages.html" class="btn btn-primary">View Tours</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Additional cards as needed -->
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="cta-footer py-5 bg-light text-center">
+        <h3>Ready for an unforgettable journey?</h3>
+        <p>Discover our travel packages and start planning your adventure today.</p>
+        <a href="packages.html" class="btn btn-success mt-3">Explore Packages</a>
+    </section>
+
+     <!-- Modal Code  -->
+<div id="authModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="authModalTitle" class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="authForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div id="passwordField" class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div id="confirmPasswordField" class="mb-3 d-none">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="switch-link">Switch to Signup</a>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.querySelector('.switch-link').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent page jump
+        const isLogin = document.getElementById('authModalTitle').innerText === 'Login';
+        
+        // Toggle Title, Button Text, and Form Fields
+        document.getElementById('authModalTitle').innerText = isLogin ? 'Sign Up' : 'Login';
+        document.querySelector('#authForm button[type="submit"]').innerText = isLogin ? 'Sign Up' : 'Login';
+        this.innerText = isLogin ? 'Switch to Login' : 'Switch to Signup';
+        
+        // Toggle Confirm Password Field for Signup
+        document.getElementById('confirmPasswordField').classList.toggle('d-none', !isLogin);
+      });
+      </script>
+      <script>document.getElementById("searchInput").addEventListener("keyup", function() {
+        const searchValue = this.value.toLowerCase();
+        const destinationCards = document.querySelectorAll(".card"); 
+    
+        destinationCards.forEach((card) => {
+            const destinationName = card.getAttribute("data-name").toLowerCase();
+            if (destinationName.includes(searchValue)) {
+                card.style.display = "block";
+            } else {
+                card.style.display = "none";
+            }
+        });
+    });
+    
+      </script>
+</body>
+</html>

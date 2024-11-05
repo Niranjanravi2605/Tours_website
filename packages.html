@@ -1,0 +1,223 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Packages - India Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">India Insights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Tour Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container my-5">
+        <h2 class="text-center mb-4">Tour Packages</h2>
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/taj-mahal.jpg" class="card-img-top" alt="Package 1">
+                    <div class="card-body">
+                        <h5 class="card-title">Taj Mahal</h5>
+                        <p class="card-text">Where Love Stands Eternal in Marble Splendor.</p>
+                        <p class="card-text text-primary">Price:₹.7000</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('Taj Mahal', '₹.7000', 'assets/images/taj-mahal.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/Andaman.jpg" class="card-img-top" alt="Package 2">
+                    <div class="card-body">
+                        <h5 class="card-title">Andaman</h5>
+                        <p class="card-text">Dive into Paradise; Nature’s Blue Haven Awaits.</p>
+                        <p class="card-text text-primary">Price: ₹.8000</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('Andaman', '₹.7500', 'assets/images/ladakh.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/shimla.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Shimla</h5>
+                        <p class="card-text">Chill in the Queen of Hills, Where Snow Meets Serenity.</p>
+                        <p class="card-text text-primary">Price: ₹.6000</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('Shimla', '₹.6000', 'assets/images/shimla.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/darjeeling.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Darjeeling</h5>
+                        <p class="card-text">Sip Tea in the Clouds with Himalayan Views.</p>
+                        <p class="card-text text-primary">Price: ₹.6500</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('darjeeling', '₹.6500', 'assets/images/darjeeling.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/jaipur.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Jaipur</h5>
+                        <p class="card-text">Step into Royalty; A Gateway to Regal India.</p>
+                        <p class="card-text text-primary">Price: ₹.7500</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('jaipur', '₹.7500', 'assets/images/jaipur.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/kerala-tour.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Kerala</h5>
+                        <p class="card-text">Backwaters, Beaches, God's Own Country.</p>
+                        <p class="card-text text-primary">Price: ₹.5500</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('kerala', '₹.5500', 'assets/images/kerala-tour.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/ladakh.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Ladakh</h5>
+                        <p class="card-text">Embrace the Heights; Adventures in India’s Cold Desert</p>
+                        <p class="card-text text-primary">Price: ₹.7500</p>
+                       <button class="btn btn-primary" onclick="openBookingModal('Ladakh', '₹.7500', 'assets/images/ladakh.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/goa-tour.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Goa</h5>
+                        <p class="card-text">Sun, Sand, and Sea; Unwind in India’s Party Capital.</p>
+                        <p class="card-text text-primary">Price: ₹.8500</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('Goa', '₹.8500', 'assets/images/goa-tour.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card">
+                    <img src="assets/images/Rishikesh.jpg" class="card-img-top" alt="Package 3">
+                    <div class="card-body">
+                        <h5 class="card-title">Rishikesh</h5>
+                        <p class="card-text">Find Your Zen by the Ganges; Adventure Meets Peace.</p>
+                        <p class="card-text text-primary">Price: ₹.7800</p>
+                        <button class="btn btn-primary" onclick="openBookingModal('Rishikesh', '₹.7800', 'assets/images/Rishikesh.jpg')">Book Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <footer class="bg-light py-3 text-center">
+        <p>&copy; 2024 India Insights. All Rights Reserved.</p>
+    </footer>
+
+     <!-- Booking Modal Code -->
+     <div class="modal fade" id="bookingModal" tabindex="-1" aria-labelledby="bookingModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="bookingModalLabel">Booking Form</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img id="packageImage" class="package-image" src="" alt="Package Image" style="width: 100%; border-radius: 5px;">
+                    <h5 id="packageName" class="text-center">Package Name</h5>
+                    <p id="packagePrice" class="text-center">Package Price</p>
+                    <form id="bookingForm">
+                        <div class="mb-3">
+                            <label for="fullName" class="form-label">Full Name</label>
+                            <input type="text" class="form-control" id="fullName" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email</label>
+                            <input type="email" class="form-control" id="email" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="phone" class="form-label">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="date" class="form-label">Booking Date</label>
+                            <input type="date" class="form-control" id="date" required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="message" class="form-label">Special Requests</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Confirm Booking</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+     </div>    
+    <!-- login Modal Code -->
+    <div id="authModal" class="modal fade" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 id="authModalTitle" class="modal-title">Login</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="authForm">
+                        <div class="mb-3">
+                            <label for="email" class="form-label">Email address</label>
+                            <input type="email" class="form-control" id="emailAuth" required>
+                        </div>
+                        <div id="passwordField" class="mb-3">
+                            <label for="password" class="form-label">Password</label>
+                            <input type="password" class="form-control" id="password" required>
+                        </div>
+                        <div id="confirmPasswordField" class="mb-3 d-none">
+                            <label for="confirmPassword" class="form-label">Confirm Password</label>
+                            <input type="password" class="form-control" id="confirmPassword" required>
+                        </div>
+                        <div class="d-flex justify-content-between">
+                            <a href="#" class="switch-link">Switch to Signup</a>
+                            <button type="submit" class="btn btn-primary">Login</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function openBookingModal(packageName, packagePrice, packageImage) {
+            document.getElementById("packageName").innerText = packageName;
+            document.getElementById("packagePrice").innerText = packagePrice;
+            document.getElementById("packageImage").src = packageImage;
+            const bookingModal = new bootstrap.Modal(document.getElementById('bookingModal'));
+            bookingModal.show();
+        }
+    </script>
+</body>
+</html>

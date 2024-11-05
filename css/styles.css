@@ -1,0 +1,190 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Base Styling */
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Hero Section */
+.hero-section {
+    height: 400px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.hero-overlay {
+    background: rgba(0, 0, 0, 0.2);
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Titles and Headings */
+.popular-destinations h2,
+.featured-tours h2,
+.why-us h2,
+.testimonials h2,
+.about h2,
+.contact h2,
+.login h2 {
+    font-size: 2rem;
+    margin-bottom: 1.5rem;
+    text-align: center;
+    color: #800080;
+}
+
+/* Featured Tours, Popular Destinations, and Packages Card Styles */
+.popular-destinations .card,
+.featured-tours .card,
+.destinations .card,
+.row .card {
+    margin-bottom: 1.5rem;
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.popular-destinations .card:hover,
+.featured-tours .card:hover,
+.destinations .card:hover,
+.row .card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Why Us Section */
+.why-us i {
+    font-size: 2rem;
+    color: #be29ec;
+    margin-bottom: 0.5rem;
+}
+.why-us h5 {
+    font-size: 1.25rem;
+}
+
+/* Testimonials */
+.testimonials blockquote {
+    font-size: 1.2rem;
+    font-style: italic;
+}
+
+/* Search Bar Styles */
+.search-bar {
+    padding: 1.5rem 0;
+    background-color: #f8f9fa;
+}
+.search-bar .form-control {
+    border: 2px solid #29c5ec;
+    border-radius: 25px;
+    box-shadow: none;
+    transition: border-color 0.3s;
+}
+.search-bar .form-control:focus {
+    border-color: #138aeb;
+    box-shadow: 0 0 5px rgba(128, 0, 128, 0.5);
+}
+.search-bar .btn {
+    background-color: #29c5ec;
+    border: none;
+    border-radius: 25px;
+    color: white;
+    padding: 10px 20px;
+    transition: background-color 0.3s, transform 0.3s;
+}
+.search-bar .btn:hover {
+    background-color: #800080;
+    transform: translateY(-2px);
+}
+@media (max-width: 768px) {
+    .search-bar .form-control, .search-bar .btn {
+        width: 100%;
+    }
+    .search-bar .btn {
+        margin-top: 10px;
+    }
+}
+
+/* CTA Footer */
+.cta-footer {
+    padding: 2rem 1rem;
+    background-color: #f8f9fa;
+}
+.cta-footer h3 {
+    margin-bottom: 10px;
+}
+.cta-footer p {
+    margin-bottom: 20px;
+}
+.cta-footer a {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+/* About, Contact, and Login Sections */
+.about, .contact, .login {
+    padding: 50px 0;
+}
+.contact form, .login form {
+    max-width: 600px;
+    margin: 0 auto;
+}
+.contact .form-label, .login .form-label {
+    font-size: 1rem;
+    color: #800080;
+}
+.contact .btn, .login .btn {
+    background-color: #be29ec;
+    border: none;
+    border-radius: 5px;
+}
+.contact .btn:hover, .login .btn:hover {
+    background-color: #800080;
+}
+
+/* Footer */
+footer {
+    background-color: #f7f7f7;
+}
+
+/* Modal Styles */
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 8px 15px rgba(0, 0, 0, 0.2);
+}
+.modal-header {
+    background-color: #800080;
+    color: #fff;
+    border-bottom: none;
+}
+#authModalTitle {
+    font-weight: bold;
+}
+.switch-link {
+    color: #be29ec;
+    font-weight: bold;
+    transition: color 0.2s;
+    text-decoration: none;
+}
+.switch-link:hover {
+    color: #800080;
+}
+.btn-primary {
+    background-color: #be29ec;
+    border: none;
+    border-radius: 5px;
+}
+.btn-primary:hover {
+    background-color: #800080;
+}

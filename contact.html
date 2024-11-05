@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us - India Insights</title>
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">India Insights</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                    <li class="nav-item"><a class="nav-link" href="destinations.html">Destinations</a></li>
+                    <li class="nav-item"><a class="nav-link" href="packages.html">Tour Packages</a></li>
+                    <li class="nav-item"><a class="nav-link" href="contact.html">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link" data-bs-toggle="modal" data-bs-target="#authModal">Login</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="hero-section text-dark" style="background-image: url('assets/images/hero-contact.png');">
+        <div class="hero-overlay d-flex flex-column justify-content-center align-items-center text-white text-center">
+            <h1>About Us & Contact</h1>
+            <p>Your journey begins with us!</p>
+        </div>
+    </header>
+
+    <section class="about py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">About Us</h2>
+            <p>At India Insights, we are passionate about providing unforgettable travel experiences across India. With years of expertise, our team is dedicated to curating exceptional tours that showcase the rich culture, breathtaking landscapes, and vibrant heritage of our beautiful country.</p>
+            <p>Join us to explore the hidden gems and iconic landmarks of India. We strive to ensure that every traveler leaves with cherished memories and a deeper understanding of our diverse traditions.</p>
+        </div>
+    </section>
+
+    <section class="contact py-5 bg-light">
+        <div class="container">
+            <h2 class="text-center mb-4">Contact Us</h2>
+            <form>
+                <div class="mb-3">
+                    <label for="name" class="form-label">Full Name</label>
+                    <input type="text" class="form-control" id="name" required>
+                </div>
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email Address</label>
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+                <div class="mb-3">
+                    <label for="message" class="form-label">Message</label>
+                    <textarea class="form-control" id="message" rows="4" required></textarea>
+                </div>
+                <button type="submit" class="btn btn-primary">Send Message</button>
+            </form>
+        </div>
+    </section>
+
+    <footer class="text-center py-4">
+        <p>&copy; 2024 India Insights. All rights reserved.</p>
+    </footer>
+
+     <!-- Modal Code  -->
+<div id="authModal" class="modal fade" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 id="authModalTitle" class="modal-title">Login</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+        </div>
+        <div class="modal-body">
+          <form id="authForm">
+            <div class="mb-3">
+              <label for="email" class="form-label">Email address</label>
+              <input type="email" class="form-control" id="email" required>
+            </div>
+            <div id="passwordField" class="mb-3">
+              <label for="password" class="form-label">Password</label>
+              <input type="password" class="form-control" id="password" required>
+            </div>
+            <div id="confirmPasswordField" class="mb-3 d-none">
+              <label for="confirmPassword" class="form-label">Confirm Password</label>
+              <input type="password" class="form-control" id="confirmPassword" required>
+            </div>
+            <div class="d-flex justify-content-between">
+              <a href="#" class="switch-link">Switch to Signup</a>
+              <button type="submit" class="btn btn-primary">Login</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+  
+
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script>document.querySelector('.switch-link').addEventListener('click', function (event) {
+        event.preventDefault(); // Prevent page jump
+        const isLogin = document.getElementById('authModalTitle').innerText === 'Login';
+        
+        // Toggle Title, Button Text, and Form Fields
+        document.getElementById('authModalTitle').innerText = isLogin ? 'Sign Up' : 'Login';
+        document.querySelector('#authForm button[type="submit"]').innerText = isLogin ? 'Sign Up' : 'Login';
+        this.innerText = isLogin ? 'Switch to Login' : 'Switch to Signup';
+        
+        // Toggle Confirm Password Field for Signup
+        document.getElementById('confirmPasswordField').classList.toggle('d-none', !isLogin);
+      });
+      </script>
+</body>
+</html>
